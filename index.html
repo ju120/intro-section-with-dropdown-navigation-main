@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        font-family: "Epilogue", sans-serif;
+        font-size: 18px;
+        background-color: hsl(0, 0%, 98%);
+        color: hsl(0, 0%, 8%);
+      }
+      header {
+        height: 15vh;
+        display: flex;
+        justify-content: space-between;
+      }
+      .left_header {
+        padding: 1.5em;
+        display: flex;
+        justify-content: space-around;
+      }
+      .left_header nav a,
+      header nav a {
+        text-decoration: none;
+        color: grey;
+      }
+
+      .first_nav {
+        margin-left: 4em;
+      }
+
+      .second_nav {
+        margin-right: 2em;
+        padding: 1.5em;
+      }
+      .first_nav a,
+      .second_nav a {
+        margin-left: 1.5em;
+      }
+      .second_nav > a:last-of-type {
+        border: 1px solid hsl(0, 0%, 8%);
+        border-radius: 12px;
+        padding: 0.5em;
+      }
+      main {
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3em;
+      }
+      .left_section {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 7em;
+        margin-top: 6em;
+      }
+      .left_section h1 {
+        font-size: 3rem;
+        padding-bottom: 0.5em;
+      }
+      .left_section p {
+        font-weight: 400;
+        line-height: 2rem;
+      }
+      button {
+        width: 100px;
+        background-color: hsl(0, 0%, 8%);
+        color: hsl(0, 0%, 98%);
+        border-radius: 10px;
+        padding: 0.6em;
+        margin-top: 3em;
+      }
+      .sect_images {
+        padding-right: 1em;
+        padding-top: 3em;
+      }
+      .right_section {
+        width: 50%;
+        padding: 5em;
+        margin-top: 2em;
+      }
+      #hero {
+        height: 400px;
+      }
+      footer {
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      footer > .attribution {
+        font-size: 11px;
+        text-align: center;
+        padding: 0.5em;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="left_header">
+        <div id="logo"><img src="images/logo.svg" /></div>
+        <nav class="first_nav">
+          <a href="#">Features</a>
+          <img class="arrow_down" src="images/icon-arrow-down.svg" />
+          <a href="#">Company</a>
+          <img class="arrow_down" src="images/icon-arrow-down.svg" />
+          <a href="#">Careers</a>
+          <a href="#">About</a>
+        </nav>
+      </div>
+
+      <nav class="second_nav">
+        <a href="#">Login</a>
+        <a href="#">Register</a>
+      </nav>
+    </header>
+    <main>
+      <section class="left_section">
+        <h1>
+          Make <br />
+          remote work
+        </h1>
+        <p>
+          Get your team in sync, no matter your location.<br />
+          Streamline processes, create team rituals, and <br />
+          watch productivity soar.
+        </p>
+        <button>Learn more</button>
+        <div class="images">
+          <img class="sect_images" src="images/client-databiz.svg" />
+          <img class="sect_images" src="images/client-audiophile.svg" />
+          <img class="sect_images" src="images/client-meet.svg" /><img
+            class="sect_images"
+            src="images/client-maker.svg"
+          />
+        </div>
+      </section>
+      <section class="right_section">
+        <img id="hero" src="images/image-hero-desktop.png" />
+      </section>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">ju120</a>.
+      </div>
+    </footer>
+  </body>
+</html>
