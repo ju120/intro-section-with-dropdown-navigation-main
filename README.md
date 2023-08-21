@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://ju120.github.io/intro-section-with-dropdown-navigation-main/](https://your-live-site-url.com)
 
 ## My process
 
@@ -41,11 +41,11 @@ Users should be able to:
 
 ### What I learned
 
--creating dropdown list
+-how to create responsive layout
 
 ### Continued development
 
--create dropdown list using JS
+-learning JS and React
 
 ### Useful resources
 

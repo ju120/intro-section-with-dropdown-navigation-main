@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+ 
 
     <link
       rel="icon"
@@ -19,150 +19,31 @@
     />
 
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        height: 100vh;
-        font-family: "Epilogue", sans-serif;
-        font-size: 18px;
-        background-color: hsl(0, 0%, 98%);
-        color: hsl(0, 0%, 8%);
-      }
-      header {
-        height: 15vh;
-        display: flex;
-        justify-content: space-between;
-      }
-      .left_header {
-        padding: 1.5em;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-      }
-      .left_header nav a,
-      header nav a {
-        text-decoration: none;
-        color: grey;
-      }
-
-      .first_nav {
-        margin-left: 4em;
-        display: flex;
-      }
-
-      .second_nav {
-        margin-right: 2em;
-        padding: 1.5em;
-      }
-      .first_nav a,
-      .second_nav a {
-        margin-left: 1.5em;
-      }
-      .second_nav > a:last-of-type {
-        border: 1px solid hsl(0, 0%, 8%);
-        border-radius: 12px;
-        padding: 0.5em;
-      }
-      .dropdown {
-        position: relative;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-      }
-
-      .dropdown-content {
-        display: none;
-        white-space: nowrap;
-        padding: 0.5em;
-        width: auto;
-        position: absolute;
-        background-color: white;
-        top: 100%;
-        left: 0;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        border-radius: 10px;
-      }
-
-      .dropdown:hover .dropdown-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-      .dropdown-content a {
-        padding: 0.8em;
-        margin-left: 0%;
-      }
-      .small_icons {
-        margin-right: 0.5em;
-      }
-      main {
-        height: 60vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 3em;
-      }
-      .left_section {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        margin-left: 7em;
-        margin-top: 6em;
-      }
-      .left_section h1 {
-        font-size: 3rem;
-        padding-bottom: 0.5em;
-      }
-      .left_section p {
-        font-weight: 400;
-        line-height: 2rem;
-      }
-      button {
-        width: 100px;
-        background-color: hsl(0, 0%, 8%);
-        color: hsl(0, 0%, 98%);
-        border-radius: 10px;
-        padding: 0.6em;
-        margin-top: 3em;
-      }
-      .sect_images {
-        padding-right: 1em;
-        padding-top: 3em;
-      }
-      .right_section {
-        width: 50%;
-        padding: 5em;
-        margin-top: 2em;
-      }
-      #hero {
-        height: 400px;
-      }
-      footer {
-        height: 25vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-      }
-      footer > .attribution {
-        font-size: 11px;
-        text-align: center;
-        padding: 0.5em;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+
     <header>
       <div class="left_header">
         <div id="logo"><img src="images/logo.svg" /></div>
+    
+        
+<div id="main">
+<div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >×</a
+          >
+          <a href="#">Features</a>
+          <a href="#">Company</a>
+          <a href="#">Carriers</a>
+          <a href="#">About</a>
+        </div>
+
+        <div id="main">
+          <button class="openbtn" onclick="openNav()">
+          <img src="images/icon-menu.svg">
+          </button>
+        </div>
         <nav class="first_nav">
           <div class="dropdown">
             <a href="#">Features</a>
@@ -201,10 +82,7 @@
               <a href="#">Blog</a>
             </div>
           </div>
-          <!-- <a href="#">Features</a>
-          <img class="arrow_down" src="images/icon-arrow-down.svg" />
-          <a href="#">Company</a>
-          <img class="arrow_down" src="images/icon-arrow-down.svg" /> -->
+
           <a href="#">Careers</a>
 
           <a href="#">About</a>
@@ -217,6 +95,7 @@
       </nav>
     </header>
     <main>
+      <div class="mobile-hero-image"></div>
       <section class="left_section">
         <h1>
           Make <br />
@@ -238,7 +117,7 @@
         </div>
       </section>
       <section class="right_section">
-        <img id="hero" src="images/image-hero-desktop.png" />
+        <img src="images/image-hero-desktop.png" alt="hero_img" id="hero" />
       </section>
     </main>
     <footer>
@@ -249,5 +128,16 @@
         >. Coded by <a href="#">ju120</a>.
       </div>
     </footer>
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.right = "0";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.right = "-250";
+      }
+    </script>
   </body>
 </html>
