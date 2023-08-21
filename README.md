@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/ju120/intro-section-with-dropdown-navigation-main.git](https://your-solution-url.com)
 - Live Site URL: [https://ju120.github.io/intro-section-with-dropdown-navigation-main/](https://your-live-site-url.com)
 
 ## My process
